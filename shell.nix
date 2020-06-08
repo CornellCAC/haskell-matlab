@@ -3,6 +3,7 @@
 # TODO: instead of relying on a default in Documents/MATLAB
 #
 
+{nixpkgs ? import <nixpkgs> { }, ghc ? nixpkgs.ghc}:
 with import <nixpkgs> {};
 let
   deps = (import ./deps.nix);
@@ -12,6 +13,7 @@ haskell.lib.buildStackProject {
   dontUnpack = true;
   buildInputs = deps.buildInputs;
   libPath = deps.libPath;
+  inherit ghc;
   src = null;
   shellHook = ''
     export MATLAB_PATH=${deps.matlabPath}

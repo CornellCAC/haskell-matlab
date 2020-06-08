@@ -3,10 +3,31 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    cabal-file:
+      size: 1497
+      sha256: 32c918b65cc7e93ed8c8dd63b7db47243b9f674d4e6eebe7971c2ace790c0034
+    name: zio
+    version: 0.1.0.0
+    git: https://github.com/bbarker/haskell-zio.git
+    pantry-tree:
+      size: 727
+      sha256: b7745df5a5639e52aed5250a0536018518c0412a208430258120628a07782f77
+    commit: a138d3025adc378f345b5be189812b04744ecfbf
+  original:
+    git: https://github.com/bbarker/haskell-zio.git
+    commit: a138d3025adc378f345b5be189812b04744ecfbf
+- completed:
+    hackage: Cabal-2.4.1.0@sha256:8aef21305c2324214944983e9dd118e65063b2e04f8c597db875298f602f6f12,21831
+    pantry-tree:
+      size: 31482
+      sha256: 0d79ac300c7ac910d6a813b4de687498e51b6068e4f97503b8772dc9e9f0d36c
+  original:
+    hackage: Cabal-2.4.1.0@sha256:8aef21305c2324214944983e9dd118e65063b2e04f8c597db875298f602f6f12,21831
 snapshots:
 - completed:
-    size: 524996
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/14/27.yaml
-    sha256: 7ea31a280c56bf36ff591a7397cc384d0dff622e7f9e4225b47d8980f019a0f0
-  original: lts-14.27
+    size: 531238
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/nightly/2020/6/8.yaml
+    sha256: 4142a0c691416f331f8b2f9d453a3ec68a3db19929781aeefdd5f75487ce6752
+  original: nightly-2020-06-08
